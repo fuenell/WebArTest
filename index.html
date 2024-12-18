@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | ArTest6</title>
+    <title>Unity WebGL Player | Wa-En</title>
     <link rel="stylesheet" href="TemplateData/style.css">
 
     <style>
@@ -62,7 +62,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="wtracker.js" type="text/javascript"></script>
-    <script src="Build/WebArTest.loader.js"></script>
+    <script src="Build/1.loader.js"></script>
     <script>
         var initialize = async() =>{
             var unityCanvas = document.querySelector("#unity-canvas");
@@ -96,12 +96,12 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/WebArTest.data",
-                    frameworkUrl: "Build/WebArTest.framework.js",
-                    codeUrl: "Build/WebArTest.wasm",
+                    dataUrl: "Build/1.data",
+                    frameworkUrl: "Build/1.framework.js",
+                    codeUrl: "Build/1.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "ArTest6",
+                    productName: "Wa-En",
                     productVersion: "0.1.0",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
