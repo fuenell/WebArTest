@@ -129,9 +129,7 @@
 
         window.WEBCAM_SETTINGS = {
             video: {
-                facingMode: unityFacingMode,
-                width: { ideal: 3000, }, // 최대 해상도를 1920으로 설정
-                height: { ideal: 4000, }  // 최대 해상도를 1080으로 설정
+                facingMode: unityFacingMode
             },
             audio: false
         };
@@ -267,18 +265,6 @@
 
             });
         }
-
-        function StartGPS(){            
-            window.wTracker.startGPS()
-            .then((pos)=>{
-                console.log("GPS started", pos);
-            })
-            .catch(error=>{
-                console.error("Failed to start GPS - " + error);
-                //ShowError("Failed to start GPS " + error);
-            });
-        }
-        
 
         function ShowError(error){
             document.getElementById("errorDiv").style.display = "flex";
